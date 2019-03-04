@@ -7,7 +7,7 @@ export default class Dashboard extends Component {
 
     render() {
         return <Tabs type="card">
-            <TabPane tab="FVT" key="1"><TabInfo tab="FVT" /></TabPane>
+            <TabPane tab="Test" key="1"><TabInfo tab="Test" /></TabPane>
             <TabPane tab="Perf" key="2"><TabInfo tab="Perf" /></TabPane>
         </Tabs>
     }

@@ -1,10 +1,15 @@
 export default {
-    FVT: {
+    Test: {
         widgets: [
+            {
+                type: 'Summary',
+                x: 0,
+                y: 0,
+            },
             {
                 type: 'BuildStatus',
                 x: 0,
-                y: 0,
+                y: 1,
                 settings: {
                     serverSelected: 'AdoptOpenJDK',
                     title: "https://ci.adoptopenjdk.net",
@@ -13,7 +18,7 @@ export default {
             {
                 type: 'BuildStatus',
                 x: 0,
-                y: 1,
+                y: 2,
                 settings: {
                     serverSelected: 'OpenJ9',
                     title: "https://ci.eclipse.org/openj9",
@@ -22,7 +27,7 @@ export default {
             {
                 type: 'BuildStatus',
                 x: 0,
-                y: 2,
+                y: 3,
                 settings: {
                     serverSelected: 'CustomJenkins',
                 }
