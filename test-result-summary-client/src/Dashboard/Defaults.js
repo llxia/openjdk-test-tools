@@ -6,8 +6,7 @@ export default {
                 x: 0,
                 y: 0,
                 settings: {
-                    serverSelected: 'AdoptOpenJDK',
-                    title: "https://ci.adoptopenjdk.net",
+                    serverSelected: 'InternalJenkins'
                 }
             },
             {
@@ -15,7 +14,15 @@ export default {
                 x: 0,
                 y: 1,
                 settings: {
-                    serverSelected: 'CustomJenkins',
+                    serverSelected: 'OpenJ9'
+                }
+            },
+            {
+                type: 'BuildStatus',
+                x: 0,
+                y: 2,
+                settings: {
+                    serverSelected: 'AdoptOpenJDK'
                 }
             }
         ]
