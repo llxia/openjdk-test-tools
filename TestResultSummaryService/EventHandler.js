@@ -6,6 +6,10 @@ const { logger } = require( './Utils' );
 
 const elapsed = [2 * 60, 5 * 60, 30 * 60];
 
+/*
+* EventHandler processes builds that have status != Done
+* Once all builds are in status Done, it delays the process based on the time in elapsed array
+*/
 class EventHandler {
 
     async processBuild() {
@@ -14,6 +18,8 @@ class EventHandler {
         while ( true ) {
             try {
                 const testResults = new TestResultsDB();
+                // Only process 100 builds at a time
+                //const tasks = await testResults.getData( { status: { $ne: "Done" } } ).limit(100).toArray();
                 const tasks = await testResults.getData( { status: { $ne: "Done" } } ).toArray();
                 if ( !tasks || tasks.length === 0 ) {
                     count++;
