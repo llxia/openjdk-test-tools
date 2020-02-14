@@ -10,6 +10,7 @@ app.get( '/deleteUnusedOutput', wrap( require( "./deleteUnusedOutput" ) ) );
 app.get( '/getAllChildBuilds', wrap( require( "./getAllChildBuilds" ) ) );
 app.get( '/getAllTestsWithHistory', wrap( require( "./getAllTestsWithHistory" ) ) );
 app.get( '/getAuditLogs', wrap( require( "./getAuditLogs" ) ) );
+app.get( '/getAzure', wrap( require( "./getAzure" ) ) );
 app.get( '/getParserProps', wrap ( require ("./getParserProps") )) ;
 app.get( '/getBuildHistory', wrap( require( "./getBuildHistory" ) ) );
 app.get( '/getBuildList', wrap( require( "./getBuildList" ) ) );
